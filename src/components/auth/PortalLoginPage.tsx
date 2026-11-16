@@ -1192,11 +1192,15 @@ export const PortalLoginPage: React.FC<PortalLoginPageProps> = ({
                   {/* Google OAuth Section (Permitted Staff Portals Only) */}
                   {meta.googleAuthAllowed ? (
                     <div className="pt-2 space-y-3">
-                      <div className="relative flex items-center justify-center">
-                        <div className="border-t border-[#E5E8F0] w-full" />
-                        <span className="bg-white px-3 text-[11px] text-[#7A8498] uppercase font-bold tracking-wider relative">
-                          Or Continue With
-                        </span>
+                      <div className="relative my-3">
+                        <div className="absolute inset-0 flex items-center" aria-hidden="true">
+                          <div className="w-full border-t border-[#E5E8F0]" />
+                        </div>
+                        <div className="relative flex justify-center text-xs">
+                          <span className="bg-white px-3 text-[11px] text-[#7A8498] uppercase font-bold tracking-wider">
+                            Or Continue With
+                          </span>
+                        </div>
                       </div>
 
                       <button
@@ -1223,7 +1227,7 @@ export const PortalLoginPage: React.FC<PortalLoginPageProps> = ({
                             d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.06l3.66 2.84c.87-2.6 3.3-4.52 6.16-4.52z"
                           />
                         </svg>
-                        <span>{googleLoading ? 'Validating Google Identity...' : 'Google Workspace Single Sign-On'}</span>
+                        <span>{googleLoading ? 'Validating Google Identity...' : 'Sign in with Google'}</span>
                       </button>
                     </div>
                   ) : (

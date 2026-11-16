@@ -138,7 +138,7 @@ const SPECIALIST_META: Record<
 > = {
   laboratory: {
     title: 'MediCore Laboratory AI',
-    shortBadge: 'LIS Copilot',
+    shortBadge: 'LIS AI',
     subtitle: 'Diagnostic Assays • TAT Tracking • Critical Panic Alerts • Analyzer Sync',
     privacyLabel: 'Pathology & Laboratory Information System Scope',
     summaryButtonLabel: 'Lab Queue Brief',
@@ -147,7 +147,7 @@ const SPECIALIST_META: Record<
   },
   pharmacy: {
     title: 'MediCore Pharmacy AI',
-    shortBadge: 'Pharmacy Copilot',
+    shortBadge: 'Pharmacy AI',
     subtitle: 'Drug Stock • Reorder Triggers • Adverse Drug Interactions • MAR Sync',
     privacyLabel: 'Hospital Pharmacy & Closed-Loop Medication Administration Scope',
     summaryButtonLabel: 'Stock & MAR Brief',
@@ -156,7 +156,7 @@ const SPECIALIST_META: Record<
   },
   radiology: {
     title: 'MediCore Radiology AI',
-    shortBadge: 'Radiology Copilot',
+    shortBadge: 'Radiology AI',
     subtitle: 'PACS Imaging Modalities • Scan Scheduling • Turnaround Times',
     privacyLabel: 'Radiology Information System & Diagnostic Imaging Scope',
     summaryButtonLabel: 'Imaging Queue Brief',
@@ -165,7 +165,7 @@ const SPECIALIST_META: Record<
   },
   surgery: {
     title: 'MediCore Surgical AI',
-    shortBadge: 'Surgical Copilot',
+    shortBadge: 'Surgical AI',
     subtitle: 'Theatre Scheduling • Anaesthesia Clearance • Instrument Sterilization',
     privacyLabel: 'Surgical Theatre & Anaesthesia Clinical Care Scope',
     summaryButtonLabel: 'Surgical Roster Brief',
@@ -174,7 +174,7 @@ const SPECIALIST_META: Record<
   },
   billing: {
     title: 'MediCore Billing & Claims AI',
-    shortBadge: 'Revenue Copilot',
+    shortBadge: 'Revenue AI',
     subtitle: 'NABH/IRDAI Invoicing • TPA Pre-Auth • ₹ Cashless Discharge Audit',
     privacyLabel: 'Financial Operations & Insurance Pre-Authorization Scope',
     summaryButtonLabel: 'Revenue & Aging Brief',
@@ -183,7 +183,7 @@ const SPECIALIST_META: Record<
   },
   reception: {
     title: 'MediCore Front Desk AI',
-    shortBadge: 'Front Desk Copilot',
+    shortBadge: 'Front Desk AI',
     subtitle: 'OPD Queue Flow • Doctor Schedules • Bed Allocations',
     privacyLabel: 'Front-Desk Admitting & Outpatient Registration Scope',
     summaryButtonLabel: 'Front Desk Brief',
@@ -192,7 +192,7 @@ const SPECIALIST_META: Record<
   },
   hr: {
     title: 'MediCore Healthcare HR AI',
-    shortBadge: 'Workforce Copilot',
+    shortBadge: 'Workforce AI',
     subtitle: 'Clinical Shift Rostering • Doctor On-Call • Nursing Credentialing',
     privacyLabel: 'Human Resources & Clinical Staffing Governance Scope',
     summaryButtonLabel: 'Staffing Census Brief',
@@ -201,7 +201,7 @@ const SPECIALIST_META: Record<
   },
   bloodbank: {
     title: 'MediCore Blood Bank AI',
-    shortBadge: 'Transfusion Copilot',
+    shortBadge: 'Transfusion AI',
     subtitle: 'Cross-Match Inventory • Rare Blood Groups • Cold Chain Audit',
     privacyLabel: 'Immunohematology & Blood Transfusion Safety Scope',
     summaryButtonLabel: 'Blood Reserve Brief',
@@ -210,7 +210,7 @@ const SPECIALIST_META: Record<
   },
   procurement: {
     title: 'MediCore Procurement AI',
-    shortBadge: 'Supply Chain Copilot',
+    shortBadge: 'Supply Chain AI',
     subtitle: 'Purchase Orders • Biomedical Consumables • Vendor Lead Times',
     privacyLabel: 'Hospital Supply Chain & Materials Management Scope',
     summaryButtonLabel: 'Supply Chain Brief',
@@ -219,7 +219,7 @@ const SPECIALIST_META: Record<
   },
   'patient-relations': {
     title: 'MediCore Patient Concierge AI',
-    shortBadge: 'Concierge Copilot',
+    shortBadge: 'Concierge AI',
     subtitle: 'Patient Feedback • Net Promoter Score • Grievance Resolution',
     privacyLabel: 'Patient Advocacy & Experience Operations Scope',
     summaryButtonLabel: 'Experience Brief',
@@ -228,7 +228,7 @@ const SPECIALIST_META: Record<
   },
   quality: {
     title: 'MediCore Quality & NABH AI',
-    shortBadge: 'Accreditation Copilot',
+    shortBadge: 'Accreditation AI',
     subtitle: 'NABH 5th Edition Indicators • Incident Reporting • Infection Audits',
     privacyLabel: 'Clinical Governance, Patient Safety & NABH Compliance Scope',
     summaryButtonLabel: 'Quality Audit Brief',
@@ -237,7 +237,7 @@ const SPECIALIST_META: Record<
   },
   dietary: {
     title: 'MediCore Clinical Nutrition AI',
-    shortBadge: 'Dietary Copilot',
+    shortBadge: 'Dietary AI',
     subtitle: 'Therapeutic Diets • Renal/Diabetic Meal Plans • Kitchen Timings',
     privacyLabel: 'Clinical Nutrition & Inpatient Food Service Scope',
     summaryButtonLabel: 'Meal Census Brief',
@@ -246,7 +246,7 @@ const SPECIALIST_META: Record<
   },
   ambulance: {
     title: 'MediCore Emergency & Trauma AI',
-    shortBadge: 'Trauma Copilot',
+    shortBadge: 'Trauma AI',
     subtitle: 'ALS/BLS Fleet GPS • ETA Telemetry • Code Red Resuscitation Prep',
     privacyLabel: 'Emergency Medical Services & Trauma Coordination Scope',
     summaryButtonLabel: 'Fleet Dispatch Brief',
@@ -255,7 +255,7 @@ const SPECIALIST_META: Record<
   },
   housekeeping: {
     title: 'MediCore Environmental Safety AI',
-    shortBadge: 'Facility Copilot',
+    shortBadge: 'Facility AI',
     subtitle: 'Ward Sanitization • Bed Turnover TAT • Bio-Medical Waste Clearance',
     privacyLabel: 'Hospital Hygiene, Bed Cleaning & Environmental Services Scope',
     summaryButtonLabel: 'Sanitization Brief',
@@ -264,7 +264,7 @@ const SPECIALIST_META: Record<
   },
   mrd: {
     title: 'MediCore Medical Records AI',
-    shortBadge: 'MRD Copilot',
+    shortBadge: 'MRD AI',
     subtitle: 'ICD-10 Coding • Discharge Summaries • MLC Retention Compliance',
     privacyLabel: 'Medical Records Department & Health Information Management Scope',
     summaryButtonLabel: 'MRD Archive Brief',

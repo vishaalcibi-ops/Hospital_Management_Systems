@@ -275,12 +275,12 @@ export const EditorialUtilityHeader: React.FC<EditorialUtilityHeaderProps> = ({
           </div>
         </div>
 
-        {/* Center: Global Search & Command Palette Quick Trigger */}
-        <div className="hidden md:flex items-center flex-1 max-w-sm mx-6">
+        {/* Center Middle: Global Search & MediCore AI Quick Launcher */}
+        <div className="hidden md:flex items-center justify-center flex-1 max-w-lg mx-6 gap-3">
           <button
             type="button"
             onClick={() => { sound.playClick(); onOpenSearch(); }}
-            className="w-full flex items-center justify-between px-3 py-1.5 rounded-xl bg-white border border-[#E7E4DC] text-xs text-[#626B77] hover:border-[#5551A6] hover:text-[#29243A] transition shadow-2xs cursor-pointer"
+            className="flex-1 max-w-xs flex items-center justify-between px-3 py-1.5 rounded-xl bg-white border border-[#E7E4DC] text-xs text-[#626B77] hover:border-[#5551A6] hover:text-[#29243A] transition shadow-2xs cursor-pointer"
           >
             <div className="flex items-center gap-2">
               <Search className="w-3.5 h-3.5 text-[#626B77]" />
@@ -290,21 +290,34 @@ export const EditorialUtilityHeader: React.FC<EditorialUtilityHeaderProps> = ({
               <kbd className="px-1.5 py-0.5 rounded font-mono text-[10px] bg-[#F7F5EF] border border-[#E7E4DC] text-[#626B77]">⌘K</kbd>
             </div>
           </button>
-        </div>
 
-        {/* Right: Hospital Status + Notifications + Sound + User Profile */}
-        <div className="flex items-center gap-2 sm:gap-2.5">
-          {/* MediCore AI Copilot Header Trigger */}
+          {/* MediCore AI Center Middle Button */}
           <button
             onClick={() => {
               sound.playClick();
               window.dispatchEvent(new CustomEvent('medicore:open-ai'));
             }}
-            className="flex items-center gap-1.5 px-2.5 py-1.5 rounded-xl bg-gradient-to-r from-[#29243A] to-[#403B58] hover:from-[#1E1B2B] hover:to-[#29243A] text-white text-xs font-bold shadow-xs hover:shadow-md hover:scale-[1.02] active:scale-[0.98] transition cursor-pointer"
-            title="Open MediCore AI Assistant (Ctrl+Shift+A)"
+            className="flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-gradient-to-r from-[#29243A] to-[#403B58] hover:from-[#1E1B2B] hover:to-[#29243A] text-white text-xs font-bold shadow-xs hover:shadow-md hover:scale-[1.02] active:scale-[0.98] transition cursor-pointer shrink-0"
+            title="Open MediCore AI (Ctrl+Shift+A)"
           >
             <Sparkles className="w-3.5 h-3.5 text-amber-300 animate-pulse" />
-            <span className="hidden sm:inline">AI Copilot</span>
+            <span>MediCore AI</span>
+          </button>
+        </div>
+
+        {/* Right: Hospital Status + Notifications + Sound + User Profile */}
+        <div className="flex items-center gap-2 sm:gap-2.5">
+          {/* Mobile MediCore AI Trigger */}
+          <button
+            onClick={() => {
+              sound.playClick();
+              window.dispatchEvent(new CustomEvent('medicore:open-ai'));
+            }}
+            className="md:hidden flex items-center gap-1.5 px-2.5 py-1.5 rounded-xl bg-gradient-to-r from-[#29243A] to-[#403B58] text-white text-xs font-bold shadow-xs cursor-pointer"
+            title="Open MediCore AI"
+          >
+            <Sparkles className="w-3.5 h-3.5 text-amber-300 animate-pulse" />
+            <span>MediCore AI</span>
           </button>
 
           {/* Audio Mute Button */}

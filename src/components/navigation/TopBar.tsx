@@ -233,7 +233,7 @@ export const TopBar: React.FC<TopBarProps> = ({
           </button>
         )}
 
-        {/* MediCore AI Assistant Quick Trigger */}
+        {/* MediCore AI Quick Trigger */}
         <button
           type="button"
           onClick={() => {
@@ -243,7 +243,7 @@ export const TopBar: React.FC<TopBarProps> = ({
           className="hidden sm:inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl text-white text-xs font-bold bg-[#1769AA] hover:bg-[#153B63] transition-colors shadow-sm"
         >
           <Sparkles className="w-3.5 h-3.5" />
-          <span>AI Assistant</span>
+          <span>MediCore AI</span>
         </button>
 
         {/* User Mini Avatar */}
