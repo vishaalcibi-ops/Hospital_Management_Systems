@@ -240,8 +240,12 @@ export const Sidebar: React.FC<SidebarProps> = ({
         >
           {!collapsed && (
             <div className="flex items-center gap-2.5 flex-1 min-w-0">
-              <div className="w-8 h-8 rounded-xl bg-gradient-to-tr from-[#1769AA] to-[#287FC1] text-white flex items-center justify-center font-black shadow-md flex-shrink-0 text-sm">
-                ✚
+              <div className="relative w-8 h-8 rounded-xl overflow-hidden shadow-md flex-shrink-0 border border-white/20 bg-[#1A2332]">
+                <img
+                  src="/assets/medicore-logo.png"
+                  alt="MediCore Logo"
+                  className="w-full h-full object-cover rounded-xl"
+                />
               </div>
               <div className="min-w-0">
                 <div className="font-extrabold text-sm leading-tight truncate text-white">
@@ -254,8 +258,12 @@ export const Sidebar: React.FC<SidebarProps> = ({
             </div>
           )}
           {collapsed && (
-            <div className="w-8 h-8 rounded-xl bg-gradient-to-tr from-[#1769AA] to-[#287FC1] text-white flex items-center justify-center font-black shadow-md mx-auto text-sm">
-              ✚
+            <div className="relative w-8 h-8 rounded-xl overflow-hidden shadow-md mx-auto border border-white/20 bg-[#1A2332]">
+              <img
+                src="/assets/medicore-logo.png"
+                alt="MediCore Logo"
+                className="w-full h-full object-cover rounded-xl"
+              />
             </div>
           )}
 

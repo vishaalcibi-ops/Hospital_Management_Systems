@@ -367,11 +367,13 @@ export const EnterpriseHorizontalNav: React.FC<EnterpriseHorizontalNavProps> = (
             className="flex items-center gap-2.5 group cursor-pointer text-left"
             title="Return to Public Website"
           >
-            <div
-              className="w-8 h-8 rounded-xl flex items-center justify-center font-black text-white shadow-sm transition-transform group-hover:scale-105"
-              style={{ backgroundColor: branding.accent }}
-            >
-              ✚
+            <div className="relative w-8 h-8 rounded-xl overflow-hidden shadow-sm border border-slate-700/20 bg-[#1A2332] shrink-0 group-hover:scale-105 transition-transform">
+              <img
+                src="/assets/medicore-logo.png"
+                alt="MediCore Logo"
+                className="w-full h-full object-cover rounded-xl"
+              />
+              <div className="absolute inset-0 bg-gradient-to-tr from-white/0 via-white/10 to-white/20 pointer-events-none rounded-xl" />
             </div>
             <div>
               <div className="flex items-center gap-1.5">

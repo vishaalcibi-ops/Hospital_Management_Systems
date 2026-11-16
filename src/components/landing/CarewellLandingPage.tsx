@@ -195,10 +195,13 @@ export const CarewellLandingPage: React.FC<CarewellLandingPageProps> = ({
         <div className="w-full max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-6 xl:px-8 flex items-center justify-between gap-2 sm:gap-3 xl:gap-4">
           {/* Left Side: Hospital Logo & Brand Identity */}
           <a href="#home" className="flex items-center gap-2.5 sm:gap-3 group shrink-0">
-            <div className="w-9 h-9 sm:w-10 sm:h-10 2xl:w-11 2xl:h-11 rounded-xl bg-gradient-to-tr from-[#1A56DB] to-[#0EA5E9] text-white flex items-center justify-center shadow-md shadow-blue-500/20 group-hover:scale-105 transition-transform shrink-0">
-              <svg className="w-5 h-5 sm:w-5.5 sm:h-5.5 2xl:w-6 2xl:h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-                <path d="M12 2v20M2 12h20M7 7l10 10M17 7L7 17" />
-              </svg>
+            <div className="relative w-9 h-9 sm:w-10 sm:h-10 2xl:w-11 2xl:h-11 rounded-xl overflow-hidden bg-[#1A2332] text-white flex items-center justify-center shadow-md shadow-blue-500/20 group-hover:scale-105 transition-transform shrink-0 border border-slate-700/30">
+              <img
+                src="/assets/medicore-logo.png"
+                alt="MediCore Logo"
+                className="w-full h-full object-cover rounded-xl"
+              />
+              <div className="absolute inset-0 bg-gradient-to-tr from-white/0 via-white/10 to-white/20 pointer-events-none rounded-xl" />
             </div>
             <div className="shrink-0">
               <div className="flex items-center gap-1.5">
@@ -1684,8 +1687,13 @@ export const CarewellLandingPage: React.FC<CarewellLandingPageProps> = ({
             {/* Col 1: Brand Info */}
             <div className="col-span-2 md:col-span-2 space-y-4">
               <div className="flex items-center gap-3">
-                <div className="w-10 h-10 rounded-xl bg-blue-600 text-white flex items-center justify-center font-serif font-black text-lg">
-                  MC
+                <div className="relative w-10 h-10 rounded-xl overflow-hidden bg-[#1A2332] border border-slate-700/50 shadow-md shrink-0">
+                  <img
+                    src="/assets/medicore-logo.png"
+                    alt="MediCore Logo"
+                    className="w-full h-full object-cover rounded-xl"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-tr from-white/0 via-white/10 to-white/20 pointer-events-none rounded-xl" />
                 </div>
                 <div>
                   <span className="text-xl font-serif font-bold text-white tracking-tight">MEDICORE</span>

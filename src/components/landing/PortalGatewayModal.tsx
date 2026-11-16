@@ -306,8 +306,13 @@ export const PortalGatewayModal: React.FC<PortalGatewayModalProps> = ({
         {/* Header */}
         <div className="p-6 border-b border-slate-100 bg-gradient-to-r from-blue-50/80 via-white to-sky-50/50 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
           <div className="flex items-center gap-3">
-            <div className="w-12 h-12 rounded-2xl bg-blue-600 text-white flex items-center justify-center shadow-lg shadow-blue-500/20 font-serif font-bold text-xl">
-              MC
+            <div className="relative w-12 h-12 rounded-2xl overflow-hidden bg-[#1A2332] flex items-center justify-center shadow-lg shadow-blue-500/20 border border-slate-700/30 shrink-0">
+              <img
+                src="/assets/medicore-logo.png"
+                alt="MediCore Logo"
+                className="w-full h-full object-cover rounded-2xl"
+              />
+              <div className="absolute inset-0 bg-gradient-to-tr from-white/0 via-white/10 to-white/20 pointer-events-none rounded-2xl" />
             </div>
             <div>
               <div className="flex items-center gap-2">

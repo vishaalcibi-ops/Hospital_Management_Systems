@@ -418,10 +418,13 @@ export const UnifiedPortalAuth: React.FC<UnifiedPortalAuthProps> = ({
         {/* Top Logo */}
         <div className="relative z-10">
           <div className="flex items-center gap-3.5">
-            <div className="w-12 h-12 rounded-2xl bg-gradient-to-tr from-[#1769AA] to-[#287FC1] flex items-center justify-center font-bold text-white shadow-lg shadow-black/20 border border-white/20">
-              <svg className="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-                <path d="M12 2v20M2 12h20M7 7l10 10M17 7L7 17" />
-              </svg>
+            <div className="relative w-12 h-12 rounded-2xl overflow-hidden bg-[#1A2332] flex items-center justify-center font-bold text-white shadow-lg shadow-black/20 border border-white/20 shrink-0">
+              <img
+                src="/assets/medicore-logo.png"
+                alt="MediCore Logo"
+                className="w-full h-full object-cover rounded-2xl"
+              />
+              <div className="absolute inset-0 bg-gradient-to-tr from-white/0 via-white/10 to-white/20 pointer-events-none rounded-2xl" />
             </div>
             <div>
               <div className="text-xl font-bold tracking-tight text-white flex items-center gap-2">

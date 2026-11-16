@@ -243,11 +243,13 @@ export const EditorialUtilityHeader: React.FC<EditorialUtilityHeaderProps> = ({
             className="flex items-center gap-2 group cursor-pointer text-left"
             title="Return to Public Website"
           >
-            <div
-              className="w-8 h-8 rounded-xl flex items-center justify-center font-serif font-black text-white text-sm shadow-xs transition-transform group-hover:scale-105"
-              style={{ backgroundColor: theme.accent }}
-            >
-              ✚
+            <div className="relative w-8 h-8 rounded-xl overflow-hidden shadow-xs border border-slate-700/25 bg-[#1A2332] shrink-0 group-hover:scale-105 transition-transform">
+              <img
+                src="/assets/medicore-logo.png"
+                alt="MediCore Logo"
+                className="w-full h-full object-cover rounded-xl"
+              />
+              <div className="absolute inset-0 bg-gradient-to-tr from-white/0 via-white/10 to-white/20 pointer-events-none rounded-xl" />
             </div>
             <div>
               <span className="font-serif text-base font-black tracking-tight text-[#29243A] block leading-none">

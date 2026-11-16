@@ -193,8 +193,13 @@ export const PatientActivationPage: React.FC<PatientActivationPageProps> = ({
           onClick={() => { sound.playClick(); handleLanding(); }}
           className="flex items-center gap-2.5 group cursor-pointer"
         >
-          <div className="w-9 h-9 rounded-xl bg-gradient-to-tr from-[#1769AA] to-[#287FC1] text-white flex items-center justify-center font-black shadow-md">
-            ✚
+          <div className="relative w-9 h-9 rounded-xl overflow-hidden shadow-md border border-slate-700/20 bg-[#1A2332] shrink-0 group-hover:scale-105 transition-transform">
+            <img
+              src="/assets/medicore-logo.png"
+              alt="MediCore Logo"
+              className="w-full h-full object-cover rounded-xl"
+            />
+            <div className="absolute inset-0 bg-gradient-to-tr from-white/0 via-white/10 to-white/20 pointer-events-none rounded-xl" />
           </div>
           <div>
             <div className="flex items-center gap-1.5">

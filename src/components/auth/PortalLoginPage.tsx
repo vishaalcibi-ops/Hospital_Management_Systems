@@ -866,11 +866,13 @@ export const PortalLoginPage: React.FC<PortalLoginPageProps> = ({
               className="flex items-center gap-2.5 text-left group cursor-pointer"
               title="Return to Public Website"
             >
-              <div
-                className="w-9 h-9 rounded-xl text-white flex items-center justify-center font-black shadow-md shadow-blue-500/20 group-hover:scale-105 transition-transform"
-                style={{ backgroundColor: meta.accent }}
-              >
-                ✚
+              <div className="relative w-9 h-9 rounded-xl overflow-hidden shadow-md shadow-blue-500/20 border border-white/20 bg-[#1A2332] shrink-0 group-hover:scale-105 transition-transform">
+                <img
+                  src="/assets/medicore-logo.png"
+                  alt="MediCore Logo"
+                  className="w-full h-full object-cover rounded-xl"
+                />
+                <div className="absolute inset-0 bg-gradient-to-tr from-white/0 via-white/10 to-white/20 pointer-events-none rounded-xl" />
               </div>
               <div>
                 <span className="text-base font-serif font-black tracking-tight text-white block leading-tight">
@@ -956,11 +958,12 @@ export const PortalLoginPage: React.FC<PortalLoginPageProps> = ({
                   onClick={() => { sound.playClick(); handleLanding(); }}
                   className="flex items-center gap-2 cursor-pointer"
                 >
-                  <div
-                    className="w-7 h-7 rounded-lg text-white flex items-center justify-center font-black text-xs shadow-xs"
-                    style={{ backgroundColor: meta.accent }}
-                  >
-                    ✚
+                  <div className="relative w-7 h-7 rounded-lg overflow-hidden shadow-xs border border-slate-700/20 bg-[#1A2332] shrink-0">
+                    <img
+                      src="/assets/medicore-logo.png"
+                      alt="MediCore Logo"
+                      className="w-full h-full object-cover rounded-lg"
+                    />
                   </div>
                   <span className="text-sm font-serif font-black text-[#202A40]">MEDICORE</span>
                 </button>
